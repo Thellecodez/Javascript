@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="one">
+    <input type="text" id="two"><br>
+    <button onclick="add()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="div()">/</button>
+    <button onclick="multi()">*</button>
+    <button onclick="mod()">%</button>
+    <p>
+        Answer: <b id="ans"></b>
+    </p>
+    <script>
+        function add(){
+            let a = Number(document.getElementById("one").value)
+            let b = Number(document.getElementById("two").value);
+            sum = a + b
+            return document.getElementById('ans').innerHTML=sum;
+        }
+        function sub(){
+            let a = Number(document.getElementById("one").value)
+            let b = Number(document.getElementById("two").value);
+            subt = a - b
+            return document.getElementById('ans').innerHTML=subt;
+        }
+        function div(){
+            let a = Number(document.getElementById("one").value)
+            let b = Number(document.getElementById("two").value);
+            sum = a / b
+            return document.getElementById('ans').innerHTML=sum;
+        }
+        function mod(){
+            let a = Number(document.getElementById("one").value)
+            let b = Number(document.getElementById("two").value);
+            sum = a % b
+            return document.getElementById('ans').innerHTML=sum;
+        }
+        function multi(){
+            let a = Number(document.getElementById("one").value)
+            let b = Number(document.getElementById("two").value);
+            sum = a * b
+            return document.getElementById('ans').innerHTML=sum;
+        }
+    </script>
+</body>
+</html>

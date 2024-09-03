@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first{
+            display: flex;
+            height: 50px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .first > input{
+            background-color: grey;
+            font-weight: 900;
+            border-radius: 50px;
+            height: 50px;
+            width: 50px;
+        }
+        .sec{
+            display: flex;
+            height: 50px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .sec > input{
+            background-color: grey;
+            font-weight: 900;
+            border-radius: 50px;
+            height: 50px;
+            width: 50px;
+        }
+        .third{
+            display: flex;
+            height: 50px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .third > input{
+            background-color: grey;
+            font-weight: 900;
+            border-radius: 50px;
+            height: 50px;
+            width: 50px;
+        }
+        .fourth{
+            display: flex;
+            height: 50px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .fourth > input{
+            background-color: grey;
+            font-weight: 900;
+            border-radius: 50px;
+            height: 50px;
+            width: 50px;
+        }
+        .fifth{
+            display: flex;
+            height: 50px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .fifth > input{
+            background-color: grey;
+            font-weight: 900;
+            border-radius: 50px;
+            height: 50px;
+            width: 50px;
+        }
+    </style>
+    <script src="calculator.js"></script>
+</head>
+<body>
+    <div  style="height: 500px; width: 250px; background-color: black; border-radius: 50px;">
+        <!-- The display -->
+        <input type="text" id="main" disabled style="width: 200px; margin: 20px; height: 110px; border-radius: 20px; color: whitesmoke; font-weight: 900;">
+
+        <!-- The Buttons for operation -->
+        <div class="first" style="margin-bottom: 20px;">
+            <input type="button" onclick="del()" value="C" style="background-color: ghostwhite;">
+            <input type="button" onclick="backspace()" value="X" style="background-color: ghostwhite;">
+            <input type="button" onclick="display('%')" value="%" style="background-color: ghostwhite;">
+            <input type="button" onclick="display('/')" value="/" style="background-color: orange; ">
+        </div>
+        <div class="sec" style="margin-bottom: 20px;">
+            <input type="button" onclick="display('9')" value="9">
+            <input type="button" onclick="display('8')" value="8">
+            <input type="button" onclick="display('7')" value="7">
+            <input type="button" onclick="display('+')" value="+"
+            style="background-color: orange;">
+        </div>
+        <div class="third" style="margin-bottom: 20px;">
+            <input type="button" onclick="display('6')" value="6">
+            <input type="button" onclick="display('5')" value="5">
+            <input type="button"onclick="display('4')" value="4">
+            <input type="button"onclick="display('*')" value="*"
+            style="background-color: orange;">
+        </div>
+        <div class="fourth" style="margin-bottom: 20px;">
+            <input type="button"onclick="display('3')" value="3">
+            <input type="button"onclick="display('2')" value="2">
+            <input type="button" onclick="display('1')" value="1">
+            <input type="button" onclick="display('-')" value="-" style="background-color: orange;">
+        </div>
+        <div class="fifth"style="margin-bottom: 20px;">
+            <input type="button" onclick="display('0')" value="0" style="width: 110px;">
+            <input type="button" onclick="display('.')" value=".">
+            <input type="button" onclick="solve()"  value="=" style="background-color: orange;">
+          
+        </div>
+    </div>
+</body>
+</html>

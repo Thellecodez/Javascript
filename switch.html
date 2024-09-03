@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let a  = Number(prompt("Welcome To E-Bank \n 1.To proceed \n 2. To cancel"))
+       switch(a){
+        case 1:
+            let b = Number(prompt("1.Pay nepa bill \n 2.Pay water bill \n 3.Transfer Money "))
+            if(b == 1){
+                let c = Number(prompt("Enter the amount to pay nepa bill"))
+                let d = Number(prompt("Enter the bill number"))
+                alert("You have successfully paid "+" "+c)
+                alert(`You have paid the bill for Bill Number: ${d}`)
+            }
+            else if(b==2){
+                let c = Number(prompt("Enter the amount to pay water bill"))
+            }
+        break;
+        case 2:
+            alert("Transaction as been closed")
+        break;
+        default:
+            alert("Sorry Input Not recognized")
+        break;
+       }
+    </script>
+</body>
+</html>
